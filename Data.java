@@ -47,9 +47,10 @@ class Data{
 	}
 	
 	public boolean isBissextile (){
-		if (((this.Year-1200)%4)==0)return true;
-		else return false;
-		
+		return( 
+			(this.Year % 4 == 0 && this.Year % 100 != 0) ||
+			this.Year % 400 == 0
+		);
 	}
 	
 	int dataToDays(Data d){

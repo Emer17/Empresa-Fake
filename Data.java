@@ -52,4 +52,9 @@ class Data{
 		
 	}
 	
+	int dataToDays(Data d){
+		return d.getDay() + 
+			(d.getMonth() * 30) +
+			(d.getYear() * 12 * 30);
+	}
 }

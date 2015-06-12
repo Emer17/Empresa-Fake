@@ -46,4 +46,10 @@ class Data{
 		return this.Comment;
 	}
 	
+	public boolean isBissextile (){
+		if (((this.Year-1200)%4)==0)return true;
+		else return false;
+		
+	}
+	
 }
